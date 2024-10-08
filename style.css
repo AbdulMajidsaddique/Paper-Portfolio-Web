@@ -1,0 +1,375 @@
+@font-face {
+    font-family: domain;
+    src: url(./5f242a69b1577e63266b4d72_DomaineDispCondMedium.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    background-color: #222;
+    overflow-x: hidden; /* Allow vertical scrolling, but prevent horizontal scrolling */
+}
+
+#page1 {
+    height: auto; /* Adjust height to content */
+    min-height: 100vh; /* Minimum height to fill the viewport */
+    width: 100vw;
+    background-color: #C4BCB3;
+    position: relative;
+    padding-bottom: 100px; /* Ensure space before #page2 starts */
+}
+
+#nav {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    border-bottom: 2px solid #5E5B57;
+}
+
+#nav img {
+    height: 20px;
+    width: 30%;
+}
+
+#nav h5 {
+    font-size: 15px;
+    font-weight: 100;
+    width: 30%;
+}
+
+#nav i {
+    width: 30%;
+    text-align: right;
+}
+
+#elems {
+    height: 325px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 60px;
+}
+
+#elem1, #elem3 {
+    width: 30%;
+    height: 100%;
+}
+
+#elem2 {
+    width: 30%;
+    height: 100%;
+    padding: 20px 60px;
+    text-align: center;
+    border-left: 1px solid #5E5B57;
+    border-right: 1px solid #5E5B57;
+}
+
+#elem1 #image-div, #elem3 #image-div {
+    height: 60%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#image-div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all ease 0.5s;
+}
+
+#image-div:hover img {
+    scale: 1.1;
+}
+
+#elem1 h4, #elem3 h4 {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-family: Canopee;
+}
+
+#elem1 h4 span, #elem3 h4 span {
+    background-color: #BB3D12;
+    color: #C4BCB3;
+    font-weight: 100;
+    border-radius: 5px;
+    padding: 3px;
+    font-size: 15px;
+}
+
+#elem1 p, #elem3 p {
+    font-size: 19px;
+    font-family: domain;
+    font-weight: 100;
+    color: #5E5B57;
+}
+
+#elem2 h2 {
+    font-family: Canopee;
+    font-weight: 100;
+    font-size: 55px;
+}
+
+#elem2 h3 {
+    font-family: domain;
+    font-weight: 100;
+    font-size: 33px;
+    color: #464441;
+    margin: 20px 0;
+}
+
+#elem2 h6 {
+    font-family: domain;
+    font-weight: 100;
+    font-size: 18px;
+    color: #464441;
+}
+
+#page1 h1 {
+    font-family: Canopee;
+    font-size: 490px; 
+    font-weight: 100;
+    background-color: #1C1C1A;
+    color: #C3BBB2;
+    line-height: 380px; 
+    width: 96%;
+    margin-left: 2%;
+    margin-top: 20px;
+    letter-spacing: -20px;
+}
+
+#page2 {
+    width: 100%;
+    background-color: #C4BCB3;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 40px;
+    gap: 40px; 
+}
+
+#page2-left {
+    flex-basis: 40%; 
+    min-width: 300px; 
+    border-right: 1px solid #4b4b4b;
+    padding-right: 30px;
+}
+
+#page2-left h2 {
+    font-size: 100px;
+    font-family: canopee;
+    line-height: 90px;
+    font-weight: 100;
+}
+
+#page2-left h2 span {
+    font-size: 130px; 
+    font-weight: 800;
+}
+
+#page2-left img {
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+#page2-left p {
+    font-size: 28px;
+    font-family: domain;
+    color: #2f2f2f;
+    margin-top: 20px;
+}
+
+#page2-right {
+    flex-basis: 55%; 
+    padding: 0 2%; 
+}
+
+#page2-right img {
+    width: 100%; 
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+#page2-right h1 {
+    font-family: canopee;
+    width: 100%;
+    font-size: 85px; 
+    font-weight: 100;
+    letter-spacing: -1px;
+}
+
+#page3 {
+    position: relative;
+    background-color: #C4BCB3; 
+    height: 450px; 
+    display: flex; 
+    align-items: center;
+    justify-content: space-between; 
+    padding: 0 30px;
+}
+
+#page3 h1 {
+    font-size: 330px; 
+    height: 350px;
+    letter-spacing: 10px; 
+    background-color: #1C1C19; 
+    width: 75%; 
+    color: #C4BCB3;
+    font-family: Canopee;
+    padding: 10px 30px; 
+    line-height: -10px;
+}
+
+#page3 img {
+    width: 25%; 
+    height: auto; 
+    max-height: 350px; 
+    margin: 0 3%; 
+    object-fit: contain; 
+}
+#page4 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    background-color: #C4BCB3;
+}
+
+#page4-left {
+    width: 65%;
+    height: 100%;
+    padding: 5px 50px;
+}
+
+#page4-left img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#page4-right {
+    width: 35%;
+    height: 100%;
+    padding: 5px 50px;
+    border-left: 1px solid #222;
+}
+
+#page4-right p {
+    font-size: 25px;
+    font-family: domain;
+    font-weight: 100;
+    color: #2f2f2f;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+#page4-right #anda {
+    height: 240px;
+    background-color: #CAC1B6;
+    border: 1px solid #2f2f2fc6;
+    border-radius: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+#anda h1 {
+    font-size: 70px;
+    font-weight: 100;
+    font-family: canopee;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-26%);
+    transition: all ease 0.6s;
+}
+
+#anda img {
+    height: 60px;
+    transition: all ease 0.6s;
+    transform: translateX(-120%);
+}
+
+#anda:hover img {
+    transform: translateX(76%);
+}
+
+#anda:hover h1 {
+    transform: translateX(100%);
+}
+
+#page5 {
+    padding: 25px 0;
+    width: 100%;
+    background-color: #C4BCB3;
+    border-top: 1px solid #2f2f2f;
+    border-bottom: 1px solid #2f2f2f;
+
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#page5::-webkit-scrollbar {
+    display: none;
+}
+
+#page5 h1 {
+    font-size: 100px;
+    font-family: domain;
+    font-weight: 100;
+    display: inline-block;
+    /* background-color: red; */
+    animation-timing-function: linear;
+    margin-right: 30px;
+    animation-name: scroll;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#page5 h1 span {
+    font-family: canopee;
+    background-color: #1b1b1b;
+    color: #C4BCB3;
+    padding: 0 12px;
+}
+#page6 {
+    height: 100px;
+    width: 100%;
+    background-color: #C4BCB3;
+    
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-100% - 34px));
+    }
+}
+
+#page5:hover h1{
+    animation-play-state: paused;
+}
